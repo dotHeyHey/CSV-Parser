@@ -1,15 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import assert from 'assert'
 import Papa from 'papaparse'
 
 import UploadImg from '../assets/icons/upload.png'
 import { Flex, Box, Text, Input } from '../primitives'
 import { ListParsed } from './Utils'
 
+const regex = new RegExp("(.*?)\.(csv)$");
+
 const Upload = () => {
   const [csv, setCSV] = useState({})
 
   const changeFile = event => {
     let file = event.target.files[0]
+    assert((regex.test(file.name.toLowerCase())), 'wrong file format')
 
     Papa.parse(file, {
       header: true,
