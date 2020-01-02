@@ -1,17 +1,29 @@
 import React from 'react'
-import Papa from 'papaparse'
 
-import { Flex, Box, Text, Image, Button, Divider } from '../primitives'
+import { Table } from './Table'
+import { Flex, StyledTable } from '../primitives'
 
 exports.dateToString = date => new Date(date).toISOString()
 
 exports.ListParsed = ({ csv }) => {
+  const columns = React.useMemo(
+    () => [
+      {
+        Header: `CSV File Parsed: ${csv.fileName}`,
+        columns: csv.meta.fields.map(field => ({
+          Header: field,
+          accessor: field
+        }))
+      }
+    ],
+    []
+  )
+
   return (
     <Flex flexDirection="row" alignItems="center" flexWrap="wrap">
-      {csv.meta.fields.map(field => {
-        console.log(field)
-        return <Text>{field}</Text>
-      })}
+      <StyledTable>
+        <Table columns={columns} data={csv.data} />
+      </StyledTable>
     </Flex>
   )
 }

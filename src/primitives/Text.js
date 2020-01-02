@@ -19,7 +19,7 @@ const Text = styled(Box)`
   text-overflow: ${p => (p.overflow ? 'ellipsis' : 'none')};
   white-space: ${p => (p.wrap ? 'wrap' : 'nowrap')};
   font-weight: ${p => (p.bold ? 'bold' : 'normal')};
-  color: textColor;
+  color: black;
   letter-spacing: ${theme.letterSpacings.slight};
   // text-shadow: ${props => (props.color ? '0 0 0.05em' : 'none')};
 	${color}

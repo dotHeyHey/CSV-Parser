@@ -5,7 +5,7 @@ import { Flex, Box, Text, Button, Navbar } from '../primitives'
 
 const Logo = () => {
   return (
-    <Text.Heading fontSize={[8, 6]} color="white">
+    <Text.Heading fontSize={[8, 8]}>
       <Link to="/">Statsmoji CSV</Link>
     </Text.Heading>
   )
@@ -14,16 +14,13 @@ const Logo = () => {
 const Header = () => {
   return (
     <Flex
-      bg="backing"
       alignItems="center"
-      px={[10, 8, 8]}
-      py={5}
+      px={[5, 8, 8]}
+      py={[4, 5]}
       flexDirection={['column', 'row']}
       justifyContent="center"
     >
       <Logo />
-
-      {/* <Box mx={[0, 'auto']} my={[2, 0]} /> */}
 
       <Flex>
         <Link to="/">

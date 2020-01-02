@@ -15,8 +15,8 @@ const type = props => {
       return `
           box-shadow: 0 2px 0px rgba(0, 0, 0, .5);
           color: ${theme.colorStyles.textOnPrimary.color};
-          border: ${theme.colors.mediumBlue} ${theme.borders.normal};
-          background-image: linear-gradient(290deg, ${theme.colors.mediumBlue}, ${theme.colors.mediumBlue});
+          border: ${theme.colors.black} ${theme.borders.normal};
+          background-image: linear-gradient(290deg, ${theme.colors.black}, ${theme.colors.black});
           &:hover,
           &:focus {
               opacity: 0.8

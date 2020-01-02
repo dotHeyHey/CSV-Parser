@@ -17,7 +17,7 @@ const Page = styled(Flex)`
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 15px;
-    background: ${theme.colors.primary};
+    background: ${theme.colors.white};
     /* background: -webkit-linear-gradient(@GALeft 0%, @GARight 82%);
     background: -o-linear-gradient(@GALeft 0%, @GARight 82%);
     background: linear-gradient(@GALeft 0%, @GARight 82%); */

@@ -13,7 +13,6 @@ import { Page, Flex } from './primitives'
 const Layout = ({ children, ...p }) => {
   return (
     <Flex
-      bg="foregroundBacking"
       flexDirection="column"
       width={1}
       height={'100%'}
