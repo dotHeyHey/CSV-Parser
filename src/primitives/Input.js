@@ -10,7 +10,7 @@ const Styled = styled.input`
   font-size: ${theme.fontSizes[3]};
   border: none;
   flex: 1;
-  color: white;
+  color: black;
   &:focus {
     border: none;
     outline: none;
@@ -57,7 +57,7 @@ const StyledInput = ({
 StyledInput.displayName = 'Input'
 
 StyledInput.Wrapper = styled(Flex)`
-  border: ${p => (p.error ? 'red' : theme.colors.darkWhite)} ${
+  border: ${p => (p.error ? 'red' : theme.colors.black)} ${
   theme.borders.normal
 };
   border-radius: ${theme.radii.rounded};

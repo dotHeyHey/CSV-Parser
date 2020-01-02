@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Flex, Box } from "./";
+import { Flex } from "./";
 
 import theme from "../styles/theme";
 

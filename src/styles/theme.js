@@ -5,24 +5,17 @@ const breakpoints = ['40em', '52em', '64em', '80em']
 const space = [0, 4, 8, 16, 32, 64, 128, 160, 256, 296, 512]
 
 const colors = {
-  darkerBlue: '#1a8cff',
-  mediumBlue: '#2F7CC9',
-  lightBlue: '#49BDFF',
-
   lightGray: '#f2f2f2',
   darkGray: '#29313c',
   darkerGray: '#1a1f27',
   inputColor: '#D4D4D4',
-
   yellow: '#e0d23c',
   white: '#fff',
   darkWhite: '#D4D4D4',
   black: '#000',
-
   foregroundBacking: '#252B31',
   backing: '#191E23',
   darkBacking: '#171C20',
-
   get lightPrimary() {
     return lighten(0.04, this.darkGray)
   }

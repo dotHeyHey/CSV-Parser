@@ -1,7 +1,7 @@
-import React, { forwardRef } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import {} from 'styled-system'
-import { Box, Flex } from '.'
+import { Flex } from '.'
 import theme from '../styles/theme'
 import posed from 'react-pose'
 

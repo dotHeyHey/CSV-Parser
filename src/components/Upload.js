@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Papa from 'papaparse'
 
+import UploadImg from '../assets/icons/upload.png'
 import { Flex, Box, Text, Input } from '../primitives'
 import { ListParsed } from './Utils'
 
@@ -22,14 +23,15 @@ const Upload = () => {
 
   return (
     <Flex px={[5, 8, 8]} py={5} flexDirection="column" alignItems="center">
-        <Text fontSize={4}>Upload file</Text>
+        <Text fontSize={6}>Upload file</Text>
         <Box my={2} />
         <Input
+          icon={UploadImg}
           type="file"
           accept=".csv"
           name="file"
           onChange={() => changeFile(event)}
-        />
+        ></Input>
       {csv.meta ? <ListParsed csv={csv} /> : null}
     </Flex>
   )
