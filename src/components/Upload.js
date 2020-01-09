@@ -33,15 +33,17 @@ const Upload = () => {
 
   return (
     <Flex px={[5, 8, 8]} py={5} flexDirection="column" alignItems="center">
-      <Text fontSize={6}>Upload file</Text>
-      <Box my={2} />
-      <Input
-        icon={UploadImg}
-        type="file"
-        accept=".csv"
-        name="file"
-        onChange={() => changeFile(event)}
-      ></Input>
+      <Box textAlign="center">
+        <Text fontSize={6}>Upload file</Text>
+        <Box my={2} />
+        <Input
+          icon={UploadImg}
+          type="file"
+          accept=".csv"
+          name="file"
+          onChange={() => changeFile(event)}
+        ></Input>
+      </Box>
       {csv.meta ? <ListParsed csv={csv} /> : null}
     </Flex>
   )

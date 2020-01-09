@@ -16,20 +16,22 @@ const Header = () => {
     <Flex
       alignItems="center"
       px={[5, 8, 8]}
-      py={[4, 5]}
-      flexDirection={['column', 'row']}
+      py={[4, 4]}
+      flexDirection="column"
       justifyContent="center"
     >
       <Logo />
 
       <Flex>
-        <Link to="/">
+        <a href="https://discord.gg/9zVg2GP" target="_blank">
           <Button type="primary">Discord</Button>
-        </Link>
+        </a>
+
         <Box mx={1} />
-        <Link to="/">
+
+        <a href="https://statsmoji.com" target="_blank">
           <Button type="primary">Statsmoji</Button>
-        </Link>
+        </a>
       </Flex>
       <Box my={[2, 0]} />
     </Flex>
