@@ -9,6 +9,11 @@ yarn install
 yarn start
 ```
 
+### TODO
+
+1. Settings for parsed CSV.
+2. Calculate total amount of a field.
+
 #### License
 
 MIT
