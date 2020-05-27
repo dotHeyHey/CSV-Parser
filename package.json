@@ -19,7 +19,7 @@
     "styled-system": "^5.1.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.0",
+    "@babel/core": "^7.10.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-transform-react-jsx": "^7.7.7",
     "@babel/plugin-transform-runtime": "^7.8.3",
